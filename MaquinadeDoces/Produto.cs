@@ -124,7 +124,7 @@ namespace MaquinadeDoces
 
         public string ConsultarProduto(int codigo)
         {
-            string msg = ""; // criando variavel local 
+            string msg = ""; // criando variavel local q é a msg  
 
             if(ModificarCodigo == codigo)  // comparar usamos 2 ==, (!=  e diferente)
             {
@@ -151,6 +151,7 @@ namespace MaquinadeDoces
         public Boolean AtualizarProduto(int codig,int campo,string novoDado) // colocar oq vai ser atualizado, e qual dado ele ira receber 
         {
             Boolean flag = false;
+
           if (ModificarCodigo == codigo)
             {
                 switch(campo) // escolha caso 
@@ -199,6 +200,8 @@ namespace MaquinadeDoces
 
         public void AlterarSituacao(int codigo)
         {
+            Boolean flag = false;
+
             if (ModificarCodigo == codigo)
             {
                 if(ModificarSituacao == true)
@@ -215,7 +218,7 @@ namespace MaquinadeDoces
             } // fim do modificar codigo 
             return flag;
             
-        }// Fim alterarSituacao
+        }// Fim alterar Situacao
 
 
 
@@ -235,5 +238,21 @@ namespace MaquinadeDoces
 
         }// fim  Solicitar Produto
     } // fim da classe 
+
+    class Pagamento
+    {
+        // Definindo Variaveis 
+
+        private int codigo;
+        private string descricao;
+        private double valorTotal;
+        private string formaPagamento;
+        private DateTime data;
+        private DateTime hora;
+        private int codCartao;
+        private string  bandeiraCartao;
+
+
+    } // fim do Metodo Construtor 
 
 } // fim do projeto 
