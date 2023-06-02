@@ -239,20 +239,5 @@ namespace MaquinadeDoces
         }// fim  Solicitar Produto
     } // fim da classe 
 
-    class Pagamento
-    {
-        // Definindo Variaveis 
 
-        private int codigo;
-        private string descricao;
-        private double valorTotal;
-        private string formaPagamento;
-        private DateTime data;
-        private DateTime hora;
-        private int codCartao;
-        private string  bandeiraCartao;
-
-
-    } // fim do Metodo Construtor 
-
-} // fim do projeto 
+   

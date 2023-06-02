@@ -34,7 +34,7 @@ namespace MaquinadeDoces
                 "0. SAIR \n " +
                 "1. Cadastrar Produto \n "    +
                 "2. Atualizar Produto \n "    + 
-                "3.   Consultar Produto \n "  +
+                "3. Consultar Produto \n "    +
                 "4. Qunatidade \n "           +
                 "5. data de validade \n "     +
                 "6. Situação \n "             );
@@ -98,7 +98,7 @@ namespace MaquinadeDoces
             Console.WriteLine("Faça uma breve descricao do produto:");
             string descricao = Console.ReadLine();
 
-            Console.WriteLine("informe o preço do produto: ");
+            Console.WriteLine("Informe o preço do produto: ");
             double preco = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("informe a quantidade ");
@@ -170,15 +170,8 @@ namespace MaquinadeDoces
             // CHAMAR METODO alterar Produto
             prod.AlterarSituacao (codigo);
             Console.WriteLine("Alterado!");
-        }// fim do alterar situaçao 
+        }// fim do alterar situaço
 
+    } // fim da classe 
 
-         // Forma de Pagamento 
-
-       
-
-
-
-
-    }// fim da classe 
-}// fim do projeto 
+   

@@ -8,7 +8,7 @@ namespace MaquinadeDoces
 {
     internal class Program
     {
-        static void Main(string[] args) // responsavel pela entrada e saida de dados
+        static void Main(string[] args) // Responsavel pela entrada e saida de dados
 
         {
             ControlProduto controlProd = new ControlProduto();
