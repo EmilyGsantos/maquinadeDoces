@@ -114,7 +114,7 @@ namespace MaquinadeDoces
 
             else
             {
-                Modificartroco = 0;
+                ModificarTroco = 0;
 
             }
         }// fim do verificar troco
@@ -126,14 +126,9 @@ namespace MaquinadeDoces
     }// fim do  metodo 
 
 
-    public void ColetarFormadePagamneto (short opcao)
-    {
-        ModificarFormaPagamento = opcao;
-    }// fim do coletar 
 
 
-
-    public void  EfetuarPagamentoDinheiro (short opcao, double entradaPagamneto, double valorProduto) 
+    public void  EfetuarPagamentoDinheiro ( double entradaPagamneto, double valorProduto) 
     {     string resp = "";
           resp = VerificarNotas(entradaPagamento, valorProduto);
         {
@@ -146,7 +141,7 @@ namespace MaquinadeDoces
                     ModificarDataHora = DateTime.Now; // pegar a data e hora da transação
                     ModificarTrocoMaquina += valorProduto;
                     VerificarTroco(entradaPagamneto, valorProduto);
-                    Imprimir();
+                    
                 }// fim do if 
                 
           
@@ -175,7 +170,7 @@ namespace MaquinadeDoces
                 "\nValorTotal:"           + ModificarValorTotal +
                 "\n Troco "               +  Modificartroco  +
                 "\nForma de Pagamento "   + ModificarFormaDePagamento +
-                "\n Data e Hora "          + ModificarDataHora;
+                "\n Data e Hora "         + ModificarDataHora;
              
     }// fim do metodo imprimir 
 
